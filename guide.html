@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>值得买官网</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/guide.css">
+
+  
+</head>
+<body>
+<span class="top" id="top"><img src="img/top.png"></span>
+<header>
+    <nav class="top clearfix">
+        <a href="index.html">首页</a>
+
+
+        <a href="guide.html">攻略</a>
+        <a href="appcessory.html">配件</a>
+        <a href="test.html">评测</a>
+        <a href="news.html">资讯</a>
+        <a href="picture.html">图片</a>
+        <span> <a href="login.html">登录</a><a href="#">注册</a></span>
+    </nav>
+    <nav class="main">
+        <a href="#" id="brand"><img src="img/logo.png" alt="回到首页"></a>
+        <ul>
+            <li></li>
+            <li><a href="index.html">首页</a></li>
+            <li class="navli"><a href="guide.html">购机攻略</a>
+               
+            </li>
+            <li class="navli"><a href="test.html">评测中心</a>
+                 
+            </li>
+            <li class="navli"><a href="appcessory.html">智能·配件</a>
+
+            </li>
+            <li class="navli"><a href="news.html">新闻资讯</a>
+                 
+            </li>
+            <li class="navli"><a href="picture.html">有机可图</a>
+                
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+<section class="container">
+<section class="title"></section>
+<section class="sex">
+  <div class="box">
+  <p>您的性别？</p>
+    <span class="span1">男</span>
+    <span class="span2">女</span>
+  </div>
+</section>
+<section class="identity">
+  <div class="box">
+  <p>请问您是？</p>
+   <div class="item1">
+    <span class="span3"><div class="text"><img src="img/student.png"><h2>学生一族</h2><p>注重性价比</p></div></span>
+    <span class="span4"><div class="text"><img src="img/zhao.png"><h2>科技发烧友</h2><p>追求最新科技</p></div></span>
+    <span class="span5"><div class="text"><img src="img/game.png"><h2>游戏玩家</h2><p>注重游戏体验</p></div></span>
+    <span class="span6"><div class="text"><img src="img/ff.png"><h2>出差达人</h2><p>长时间待机</p></div></span>
+    </div>
+     <div class="item1" style="display:none">
+    <span class="span3">学生一族</span>
+    <span class="span4">科技发烧友</span>
+    <span class="span5">游戏玩家</span>
+    <span class="span6">工作达人</span>
+    </div>
+  </div>
+</section>
+<section class="money">
+  <div class="box">
+    <p>您的选购预算是?</p>
+    <span class="span7">500元以下</span>
+    <span class="money2">500-1000元</span>
+    <span class="span9">1000-1500元</span>
+    <span class="span10">1500-2000元</span>
+    <span class="span11">2500-3000元</span>
+    <span class="span12">3000元以上</span>
+   
+  </div>
+</section>
+<section class="btn">
+<div class="box">
+    <span class="begin">开始挑选</span>
+</div>
+
+</section>
+</section>
+<div class="link clearfix">
+    <div class="content clearfix">
+        <p>友情链接</p>
+        <ul class="clearfix">
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+            <li><a href="#">智能手机网</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="content">关于值得买|联系我们|广告服务|站点地图|人才招聘|手机中国记事|友情链接|家长监护工程|举报不良信息</div>
+
+    <p>京ICP证-070681号 京ICP备09081256号 京公网安备：110108902076京网文[2012]0132-048号</p>
+</footer>
+
+
+
+<script src="js/vendor/picturefill.min.js"></script>
+
+
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/ajax_tool.js"></script>
+<script type="text/javascript" src='js/template-native.js'></script>
+<script type="text/template" id='template'>
+  <div class="phone-header">
+    <span>这是为您挑选的手机</span><span><a href="guide.html">重新挑选</a></span>
+  </div>
+    <div class="phone-content">
+        <% for(var i =0;i<items.length;i++){%>
+                <div class='box'>
+                    <a href="<%=items[i].href%>">
+                        <img src="<%=items[i].img%>" alt="" title="点击图片查看更多详情">
+                        </a>
+                         <p><%=items[i].name%></p>
+                         <p><span><%=items[i].money%></span></p>
+                         <div class="text"><p>
+
+                            <%=items[i].text%></p></div>
+                    </div>
+               
+        <%}%>
+      </div>
+</script>
+</body>
+</html>

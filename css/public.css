@@ -1,0 +1,426 @@
+
+
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*自定义样式*/
+
+
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+        font-family: 'Microsoft Yahei',"Lucida Grande", "Tahoma","Arial", "Helvetica", "sans-serif";
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+/*a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+*/
+/*nav*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    transition:1.5s;
+}
+#top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    background: #666;
+    padding: 0.7rem;
+    cursor: pointer;
+
+}
+
+#top:hover {
+    background:red
+}
+
+header {
+    width: 100%;
+    font-size: 2rem;
+
+}
+
+header > .top {
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+header > .top > span {
+    float: right;
+}
+
+header > .top > span > a {
+    float: left;
+    font-size: 1.5rem;
+    display: block;
+    color: #999;
+    padding: 0.7rem;
+}
+
+header > .top > a {
+    float: left;
+    font-size: 1.5rem;
+    display: block;
+    color: #999;
+    padding: 0.7rem;
+
+}
+
+header > .top > a:hover {
+    background: #000;
+    color: white;
+}
+
+header > .top > span > a:hover {
+    background: #000;
+    color: white;
+}
+
+header > .main {
+    width: 100%;
+   
+    font-size: 0;
+    text-align: center;
+    padding-top: 3.1rem;
+  
+
+}
+
+header > .main > ul > li {
+    display: inline-block;
+   transition:0.5s;
+
+}
+header > .main > ul > li:hover{
+    background: #333
+}
+header > .main > ul > li > a {
+   display: block;
+     font-size: 2rem;
+    line-height: 5rem;
+height: 5rem;
+    width: 13rem;
+
+ 
+   
+
+}
+
+header > .main > ul > li > a:hover {
+    color: white;
+}
+
+#brand {
+    float: left;
+    margin-left: 15rem;
+    display: block;
+
+}
+
+#brand img {
+    max-width: 100%; 
+height: 4rem;
+padding: 0.5rem 0
+}
+
+.header_sub {
+    width: 100%;
+    background: #e5e5e5;
+    display: none;
+}
+
+
+header > .main > ul {
+    position: relative;
+
+}
+
+#nav-content {
+
+    background-color: white;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+
+    left: 0%;
+
+    transition: 0.25s;
+    z-index: -1;
+
+}
+
+#nav-content > .item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav-content > .item > .left {
+    width: 30%;
+    float: left;
+    transform: translateX(10rem);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+    opacity: 0;
+
+}
+
+#nav-content > .item > .left > ul {
+    float: right;
+    padding: 2rem;
+
+}
+
+#nav-content > .item > .right {
+    width: 68%;
+    float: right;
+    transform: translateX(10rem);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+    opacity: 0;
+
+}
+
+#nav-content > .item > .right > ul > li {
+    float: left;
+    position: relative;
+    display: block;
+    margin: 1rem 1rem;
+}
+
+#nav-content > .item > .right > ul > li > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    bottom: 0;
+    left: 0;
+
+}
+
+#nav-content > .item > .right > ul > li > span > a {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+}
+
+header > .main > ul > li:hover #nav-content {
+    opacity: 1;
+    z-index: 10;
+
+}
+
+header > .main > ul > li:hover > #nav-content > .item > .left {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+
+header > .main > ul > li:hover > #nav-content > .item > .right {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+
+.container {
+    width: 100%;
+}
+
+.nav-content{
+    width: 60%;
+    margin:0 auto;
+}
+#nav-content>.nav-content>.item{
+    
+    width: 22%;
+    float: left;
+    margin-left: 2rem;
+    overflow: hidden;
+    
+
+}
+#nav-content>.nav-content>.item>p>a:hover{
+
+    color: red;
+}
+#nav-content>.nav-content>.item>a{
+    display: block;
+    position: relative;
+    text-align: center;
+    
+
+
+}
+#nav-content>.nav-content>.item>a>img{
+    width: 100%;
+    transition:1s;
+}
+#nav-content>.nav-content>.item>a>img:hover{
+    transform:scale(1.5);
+}
+#nav-content>.nav-content>.item>a>p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    
+
+
+}
+/*footer*/
+/*链接*/
+.link {
+    width: 100%;
+    background: #e5e5e5;
+}
+
+.link > .content {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.link > .content > ul {
+    text-align: center;
+    display: inline-block;
+    width: calc(33% - 1rem);
+    font-size: 1.5rem;
+}
+
+.link > .content > ul > li {
+    padding: 0.5rem 0;
+}
+/*美图鉴赏*/
+
+.phone_img_item{
+    width: 80%;
+    margin:0 auto;
+}
+.phone_img_item>.item_content>.bigimg{
+    width: 50%;
+    float: left;
+
+}
+.phone_img_item>.item_content>.bigimg>a{
+    display: block;
+}
+.phone_img_item>.item_content>.bigimg>a>img{
+    width: 100%;
+}
+.phone_img_item>.item_content>.smallimg{
+    width: 50%;
+    float: right;
+    font-size: 0;
+
+}
+.phone_img_item>.item_content>.smallimg>div{
+
+   width: 50%;
+    float: left;
+}
+.phone_img_item>.item_content>.smallimg>div>a>img{
+    width: 100%;
+}
+/*footer*/
+footer {
+    width: 100%;
+    background: #666;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+
+}

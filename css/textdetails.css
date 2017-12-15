@@ -1,0 +1,125 @@
+.container{
+	width: 100%;
+}
+.container > .content{
+	width: 80%;
+	margin:0 auto;
+}
+.container > .content>.content-left{
+	width: 70%;
+	float: left;
+	margin-bottom: 2rem;
+}
+.container > .content>.content-left>p{
+	font-size: 1.8rem;
+	color: #666
+}
+.container > .content>.content-left>p>a{
+	font-size: 1.8rem;
+	color: black;
+}
+.container > .content>.content-left>p>a:hover{
+	color: red;
+}
+.container > .content>.content-left>h1{
+	font-size: 3.5rem;
+}
+.container > .content>.content-left>.post-time{
+	padding:1rem 0;
+    margin: 1rem 0;
+	border-bottom: 1px solid #e5e5e5
+}
+.container > .content>.content-left>.post-time>p{
+	font-size: 1rem;
+	color: #666
+}
+.container > .content>.content-left>.post-time>p>span{
+	margin-right: 1rem;
+}
+.container > .content>.content-left>.post-body>p{
+   font-size: 1.8rem;
+   margin: 1rem 0;
+   text-indent: 2em
+}
+.container > .content>.content-left>.post-body>.img-center{
+text-align: center;
+
+}
+.container > .content>.content-left>.post-body>.img-center>img{
+  width: 80%;
+}
+.container > .content>.content-left>.post-footer>p{
+	float: right;
+}
+/*content-right*/
+.container > .content>.content-right{
+	float: right;
+	width: 28%;
+}
+.container > .content>.content-right>div>p{
+	font-size: 2rem;
+}
+
+.container > .content>.content-right>.content-ul>ul>li{
+	line-height: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	list-style-type:square;
+	margin-left: 2rem;
+
+}
+.container > .content>.content-right>.content-ul>ul>li>a{
+	display: block;
+	transition: 0.5s;
+}
+.container > .content>.content-right>.content-ul>ul>li>a:hover{
+	
+	 color: red;
+	 transform:translate(10px);
+}
+.content-phone{
+	margin-top: 2rem;
+}
+.content-phone>ul>li{
+margin-bottom: 1rem;
+
+}
+.content-phone>ul>li>.cur-header>em{
+	background: #bfbfbf;
+	display: inline-block;
+	width: 2rem;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+	color: white
+}
+.content-phone>ul>li>.cur-header>.em-1{
+	background: #d81617;
+
+}
+.content-phone>ul>li>.cur-header>.em-2{
+	background: #e14644;
+}
+.content-phone>ul>li>.cur-header>.em-3{
+	background:#e67474
+}
+.content-phone>ul>li>.cur-header>a{
+	font-size: 1.5rem;
+	display: inline-block;
+	line-height: 2rem;
+	height: 2rem;
+}
+.content-phone>ul>li>dl{
+  display: none;
+  margin:1rem 0;
+
+}
+.content-phone>ul>li>dl>dt{
+	float: left;
+}
+.content-phone>ul>li>dl>dd{
+	float: left;
+}
+.jg-price{
+	color: red
+}

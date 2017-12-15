@@ -1,0 +1,450 @@
+/*header*/
+
+/*轮播图*/
+
+/*btn*/
+.btn {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn > ul > li {
+    display: inline-block;
+    width: 24%;
+}
+
+.btn > ul > li > a > p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.btn > ul > li > a > img {
+    max-width: 100%;
+}
+
+/*热推*/
+.recommend {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.recommend > p {
+    font-size: 2rem;
+    color: black;
+}
+
+.recommend > .phone_item {
+
+    width: 100%;
+
+}
+
+#phone_header {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background: #FAF8F8;
+}
+
+#phone_header > li {
+    line-height: 3rem;
+    float: left;
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+
+}
+
+#phone_header > .active {
+    background: #e5e5e5
+}
+
+#phone_header > li:hover {
+    background: #e5e5e5;
+    color: red;
+}
+
+.phone_content_big {
+    position: relative;
+}
+
+.phone_content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.phone_content:nth-child(2) {
+    position: absolute;
+    top: 70rem;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.phone_content:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > .box {
+    display: inline-block;
+    width: calc(33% - 3.2rem);
+    text-align: center;
+    padding: 4rem 0;
+    margin: 1.5rem;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > .box > img {
+    max-width: 100%;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > .box > .text {
+    background: #e5e5e5;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.recommend > .phone_item > .phone_content_big {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > div:hover > img {
+    transition: 1s;
+    transform: rotateY(360deg)
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > div {
+    transition: 1s;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > div:hover {
+    border: 1px solid #666;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > .box:hover > .text {
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.recommend > .fitting_item {
+
+    width: 100%;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > .box > p {
+    font-size: 1.5rem;
+}
+
+.recommend > .phone_item > .phone_content_big > .phone_content > .box > p > span {
+    color: red;
+    font-size: 2rem
+}
+
+/*hot热点*/
+.c {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.hot {
+    width: 60%;
+    float: left;
+
+}
+
+.hot > .item {
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 2rem 0;
+}
+
+.hot > .item:hover {
+    background: #FAF8F8;
+}
+
+.hot > .item > dl > dt > a:hover {
+    color: #FFC037
+}
+
+.hot > h2 {
+    font: 2rem/4.4rem "STHeiti", "Microsoft Yahei";
+    color: #404040;
+}
+
+.img-area {
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.img-area > img {
+    width: 100%;
+}
+
+.txt-area > dt > a {
+    height: 2.8rem;
+    margin-bottom: 0.8rem;
+    color: black;
+    display: block;
+    font: 1.8rem/2.8rem Microsoft Yahei;
+}
+
+.des {
+    height: 4rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    color: #999;
+}
+
+.info {
+    height: 2.4rem;
+    color: #999;
+
+}
+
+.info > .time > em {
+    background: url(../img/t.png) 0 0 no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+
+    font-size: 0;
+
+    overflow: hidden;
+}
+
+/*评测*/
+.test {
+    width: 35%;
+
+    float: right;
+}
+
+#owl-demo2 {
+    border-top: 1px solid #eee;
+}
+
+.test > h2 {
+    font: 2rem/4.4rem "STHeiti", "Microsoft Yahei";
+    color: #404040;
+}
+
+.item2 > a {
+    margin: 0.5rem;
+    display: block;
+
+}
+
+.test > ul > li {
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.test > ul > li > a {
+    display: block;
+    transition: 0.5s;
+}
+
+.test > ul > li:hover {
+    background: #e5e5e5;
+    border-radius: 1rem;
+
+}
+
+.test > ul > li:hover > a {
+    transform: translate(10px, 0);
+    color: black;
+}
+
+/*专题*/
+.zhematic {
+    width: 35%;
+    float: right;
+    margin-top:1.5rem;
+}
+
+.zhematic > h2 {
+    font: 2rem/4.4rem "STHeiti", "Microsoft Yahei";
+    color: #404040;
+}
+
+.zhematic > a > img {
+    width: 100%;
+    transition: 1s;
+}
+
+.zhematic > a > img:hover {
+    transform: scale(1.1);
+}
+
+.zhematic > a {
+    display: block;
+    position: relative;
+    font-size: 0;
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+
+}
+
+.zhematic > a > .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.zhematic > ul > li {
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.zhematic > ul > li > a {
+    display: block;
+    transition: 0.5s;
+}
+
+.zhematic > ul > li:hover {
+    background: #e5e5e5;
+    border-radius: 1rem;
+
+}
+
+.zhematic > ul > li:hover > a {
+    transform: translate(10px, 0);
+    color: black;
+}
+
+.zhematic > h2 > span > a {
+    font-size: 1.5rem;
+    color: #CFCFCF;
+    float: right;
+
+}
+
+.zhematic > h2 > span > a:hover {
+    color: #666
+}
+
+/*一问一答*/
+.answer {
+    width: 35%;
+    float: right;
+    margin-top:1.5rem;
+}
+
+.answer > h2 {
+    font: 2rem/4.4rem "STHeiti", "Microsoft Yahei";
+    color: #404040;
+}
+
+.answer > h2 > span > a {
+    font-size: 1.5rem;
+    color: #CFCFCF;
+    float: right;
+
+}
+
+.answer > h2 > span > a:hover {
+    color: #666
+}
+
+.answer > .content > ul > li {
+    margin: 1rem 0;
+}
+
+.answer > .content > ul > li > a:hover {
+
+    background: #e5e5e5
+}
+
+.answer > .content > ul > li > a {
+    display: block;
+    width: 100%;
+
+}
+
+.answer > .content > ul > li > a > .content_img {
+    width: 30%;
+    font-size: 0;
+    float: left;
+}
+
+.answer > .content > ul > li > a > .content_img > img {
+    width: 100%;
+}
+
+.answer > .content > ul > li > a > .content_text {
+    width: 60%;
+    float: left;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+
+}
+
+.answer > .content > ul > li > a > .content_text > .span_one {
+    font-size: 1rem;
+    background: url(../img/e3.png) 0 0 no-repeat;
+    padding-left: 1.4rem;
+    line-height: 1rem;
+
+}
+
+.answer > .content > ul > li > a > .content_text > .span_two {
+    font-size: 1rem;
+    background: url(../img/t.png) 0 0 no-repeat;
+    padding-left: 1.4rem;
+    line-height: 1rem;
+    margin: 2rem;
+}
+
+/*手机美图*/
+.phone_pic {
+    width: 100%;
+
+}
+
+.phone_pic > .content {
+    width: 80%;
+    margin: 0 auto
+}
+
+.phone_pic > .content > ul > li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.phone_pic > .content > ul > li > a > img {
+    width: 100%;
+
+}
+
+.container > .banner {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}

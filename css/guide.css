@@ -1,0 +1,228 @@
+.title{
+	width: 100%;
+	background: url('../img/title-bg.png') no-repeat center center;
+	height: 500px;
+	background-size: cover;
+}
+
+.sex>.box{
+	width: 80%;
+	margin:0 auto;
+	background: white;
+	margin-top: -130px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 5rem;
+	padding: 2rem;
+	background: url(../img/sex-bg.png);
+}
+.sex>.box>span{
+	display: inline-block;
+	width: 15rem;
+	height:15rem;
+	border-radius: 5px;
+	border:1px solid #e5e5e5;
+	color: black;
+	font-size: 5rem;
+	text-align: center;
+	line-height: 15rem;
+	cursor: pointer;
+	margin: 3rem;
+}
+.sex>.box>.span1:hover{
+	background: #3EA7CB;
+	color: white
+}
+.sex>.box>.span2:hover{
+	background: pink;
+	color:white
+}
+.sex>.box>.span1{
+	border:1rem solid #3EA7CB;
+
+}
+.sex>.box>.span2{
+	border:1rem solid pink;
+}
+
+/*身份*/
+.identity{
+		width: 100%;
+}
+.identity>.box{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 6rem;
+	text-align: center;
+	padding-top: 5rem;
+}
+.identity>.box>.item1{
+	font-size: 2rem;
+	margin-top: 3rem;
+}
+.identity>.box>.item1>span{
+	display: inline-block;
+	width:19rem;
+	height: 19rem;
+	margin:1rem;
+	padding: 1rem;
+	text-align: center;
+ position: relative;
+ cursor: pointer;
+	
+}
+.identity>.box>.item1>span:hover{
+	background:#F9B957;
+	color: white;
+}
+
+.identity>.box>.item1>span>.text{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*价位*/
+.money{
+	width: 100%;
+	background:#F7F7F7;
+}
+.money>.box{
+	width: 80%;
+	margin:0 auto;
+	font-size: 6rem;
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	margin-bottom: 5rem;
+}
+.money>.box>span{
+	display: inline-block;;
+	width: 13rem;
+	height: 5rem;
+	font-size: 1.8rem;
+	background: white;
+	border:1px solid #e5e5e5;
+	line-height: 5rem;
+	color: black;
+cursor: pointer;
+	box-shadow:3px 4px 15px #e5e5e5
+
+}
+.money>.box>span:hover{
+	background: #F9B957;
+	color: black;
+}
+/*开始按钮*/
+.btn{
+	width: 100%;
+
+	text-align: center;
+}
+.btn>.box{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.btn>.box>.begin{
+	text-align: center;
+	line-height: 7rem;
+    display: inline-block;
+	width: 20rem;
+	height: 7rem;
+	background: #35BECF;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 3rem;
+}
+.btn>.box>.begin:hover{
+	background: #3FA0FF;
+	box-shadow: 3px 4px 15px #e5e5e5
+}
+/*搜索后的页面*/
+.phone-content{
+	width: 80%;
+	margin: 0 auto
+}
+.phone-content> p {
+    font-size: 2rem;
+    color: black;
+}
+
+.phone-content>.box {
+    display: inline-block;
+    width: calc(33% - 3.2rem);
+    text-align: center;
+    padding: 4rem 0;
+    margin: 1.5rem;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.phone-content>.box > img {
+    max-width: 100%;
+}
+.phone-content>.box > .text {
+    background: #e5e5e5;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+ .phone-content > div:hover > img {
+    transition: 1s;
+    transform: rotateY(360deg)
+}
+.phone-content > div {
+    transition: 1s;
+}
+.phone-content > div:hover {
+    border: 1px solid #666;
+}
+.phone-content > .box:hover > .text {
+    bottom: 0;
+    opacity: 0.8;
+}
+/*phone-header*/
+.phone-header{
+	margin:0 auto;
+	width: 80%;
+	background: url(../img/phone-header-bg.png) no-repeat;
+	height: 300px;
+
+}
+.phone-header>span{
+	display: inline-block;
+}
+.phone-header>span:nth-child(1){
+	
+	width: 15rem;
+	height: 5rem;
+	background: #3390D2;
+	text-align: center;
+	line-height: 5rem;
+	color: white;
+	font-size: 2rem;
+	border-radius: 5px;
+	margin: 5rem;
+}
+.phone-header>span:nth-child(2){
+
+	width: 15rem;
+	height: 5rem;
+	background: #3390D2;
+	text-align: center;
+	line-height: 5rem;
+	color: white;
+	font-size: 2rem;
+	border-radius: 5px;
+	margin: 5rem;
+}

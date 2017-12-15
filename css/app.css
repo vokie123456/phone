@@ -1,0 +1,176 @@
+﻿.banner{
+	width: 100%;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	height: 260px;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+}
+.banner > .text{
+	padding-top: 2rem;
+}
+.banner > .text>p{
+	color: #666;
+	font-size: 1.5rem;
+	padding: 2rem 0 2rem 0
+}
+.banner>.text>p:after{
+	    background: #666 no-repeat;
+    content: " ";
+    height: 1px;
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+}
+.banner>.text>p:before{
+	    background: #666 no-repeat;
+    content: " ";
+    height: 1px;
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+}
+
+/*导航*/
+.content-nav{
+	width: 100%;
+
+}
+.content-nav>.box{
+	width: 80%;
+	
+	
+	margin:0 auto;
+	margin-top: 1rem;
+}
+.content-nav>.box>ul{
+	text-align: center
+}
+.content-nav>.box>ul>li{
+	display: inline-block;
+	width: 12%;
+	padding: 1rem;
+	font-size: 2rem;
+	margin: 1rem;
+	
+}
+.content-nav>.box>ul>li>a{
+	color: white;
+	  transition: 1s;
+	  font-weight: bold;
+}
+.content-nav>.box>ul>li:hover>a{
+
+color: red;
+}
+.content-nav>.box>ul>li:nth-child(1){
+	background: rgb(162,129,100);
+
+	border-radius: 5px;
+}
+.content-nav>.box>ul>li:nth-child(2){
+	background: rgb(151,148,147);
+
+	border-radius: 5px;
+}
+.content-nav>.box>ul>li:nth-child(3){
+	background: rgb(176,95,77);
+
+	border-radius: 5px;
+}
+.content-nav>.box>ul>li:nth-child(4){
+	background: rgb(136,179,202);
+
+	border-radius: 5px;
+}
+.content-nav>.box>ul>li:nth-child(5){
+	background: rgb(107,147,150);
+
+	border-radius: 5px;
+}
+/*内容*/
+.content{
+	width: 100%;
+
+}
+.content>.app-box{
+	width: 80%;
+	margin:0 auto;
+
+}
+.content>.app-box>.item{
+	width: 31%;
+	cursor: pointer;
+	transition:0.5s;
+	border:1px solid white;
+	display: inline-block;
+margin-left: 1.2rem;
+
+}
+.content>.app-box>.item:hover{
+	border:1px solid pink;
+}
+.content>.app-box>.item>.item2{
+	position: relative;
+}
+.content>.app-box>.item>.item2>.img{
+	width: 100%;
+}
+.content>.app-box>.item>.item2>.img>a>img{
+	width: 100%;
+}
+.content>.app-box>.item>.item2>.text{
+
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: 10;
+background: white;
+width:100%;
+font-size: 1.2rem;
+height: 30px;
+overflow: hidden;
+transition:0.5s;
+
+}
+.content>.app-box>.item>.item2>.text>.jie{
+    
+	height: 70px;
+   line-height: 25px;
+	transition:1s;
+}
+.content>.app-box>.item>.item2>.text:hover{
+
+	
+	height:100px;
+}
+.content>.app-box>.item>.time{
+	padding: 1rem 0;
+}
+/*加载更多*/
+.btn{
+	width: 100%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	
+}
+.btn>span{
+	display: block;
+	border-radius: 5px;
+	background: #1DBDD1;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 4rem;
+	width: 15rem;
+	height: 4rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	cursor: pointer;
+
+}
+.btn>span:hover{
+	background: #198D9C
+}
