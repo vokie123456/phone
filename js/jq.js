@@ -68,10 +68,10 @@ $(window).ready(function(){
 	
 	 $('.begin').on('click',function(){
         $.ajax({
-        	url:'./shai.php',
+        	url:'https://guthubsun.github.io/phone/shai.php',
         	data:{'sex':sex,'money':money,'people':people},
-            dataType:'json',
-            type:'post',
+            dataType:'jsonP',
+            type:'get',
             success:function(data){
             	
             var container=document.querySelector('.container');
